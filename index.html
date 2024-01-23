@@ -38,74 +38,40 @@
 </head>
 
 <body class="font-manrope">
-    <header class="md:container md:mx-auto">
-        <nav>
-            <div class="navbar bg-base-100 mx-auto my-12">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Home</a></li>
-                      <li><a>About</a></li>
-                      <li><a>Pages</a></li>
-                      <li><a>Blogs</a></li>
-                      <li><a>Contact</a></li>
-                    </ul>
-                  </div>
-                  <h1 class="text-4xl text-clr-1 font-extrabold">Hockey<span class="text-hockey-primary">’</span>s</h1>
+  <!-- navbar creation -->
+  <header>
+    <nav class="mt-3 mx-auto max-w-6xl md:my-12">
+        <div class="navbar bg-base-100 w">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu text-base font-normal text-clr-2 menu-horizontal px-1">
-                    <li><a class="text-hockey-primary font-extrabold">Home</a></li>
-                      <li><a>About</a></li>
-                      <li><a>Pages</a></li>
-                      <li><a>Blogs</a></li>
-                      <li><a>Contact</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end flex flex-row gap-x-2.5">
-                        <img class="size-6 invisible md:visible" src="./images/search-icon.png" alt="">
-                        <a class="btn bg-hockey-primary text-white text-xl font-bold w-36 h-14 px-4">Get Ticket</a>
-                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>                      
+                </ul>
               </div>
-        </nav>
-    </header>
-    <main>
-        <section class="md:container md:mx-auto">
-            <div class="carousel w-full">
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img src="./images/hs.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide4" class="carousel-item relative w-full">
-                  <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
-                </div>
-              </div>
-        </section>
-    </main>
-    
+              <h1 class="text-clr-1 text-2xl font-extrabold md:text-4xl">Hockey<span class="text-[#FF4240]">’</span>s</h1>
+            </div>
+            <div class="navbar-center hidden lg:flex text-lg text-clr-2">
+              <ul class="menu menu-horizontal px-1">
+                  <li><a class="text-hockey-primary font-bold">Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end flex gap-x-2">
+                <img class="invisible md:visible" src="./images/search-icon.png" alt="">
+              <a class="btn bg-hockey-primary font-bold text-lg text-[#FFF]">Get Ticket</a>
+            </div>
+          </div>
+    </nav>
+  </header>
 </body>
 </html>
